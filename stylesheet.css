@@ -2,18 +2,19 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: Arial, sans-serif;
+        font-family: "config-mono-vf", sans-serif;
+        
     }
 
     body {
-        background: #f4f4f4;
-        color: #333;
+        background: #F7F3E3 ;
+        color: #1e1c22 ;
     }
 
     /* Banner */
     .banner {
         height: 250px;
-        background-image: url('https://atlas.cern/sites/default/files/2024-04/ATLAS-Wboson-production-v2-banner.jpg');
+        background-image: url('images/banner.png');
         background-size: cover;
         background-position: center;
     }
@@ -29,14 +30,16 @@
         width: 150px;
         height: 150px;
         border-radius: 50%;
-        border: 5px solid white;
+        border: 5px solid #F7F3E3 ;
         object-fit: cover;
-        background: white;
+        background: #F7F3E3 ;
     }
 
     .profile h1 {
         margin-top: 15px;
         font-size: 2rem;
+        font-family: "config-mono-vf", sans-serif;
+        font-variation-settings: "wght" 2000;
     }
 
     .profile p {
@@ -48,7 +51,7 @@
     .container {
         max-width: 900px;
         margin: auto;
-        background: white;
+        background: #ECF0F1 ;
         border-radius: 10px;
         overflow: hidden;
         box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -59,25 +62,25 @@
     .tabs {
         display: flex;
         flex-wrap: wrap;
-        background: #222;
+        background: #1e1c22 ;
     }
 
     .tab-button {
         flex: 1;
         padding: 15px;
         border: none;
-        background: #222;
-        color: white;
+        background: #2B2118 ;
+        color: #c6be9b ;
         cursor: pointer;
         transition: 0.3s;
     }
 
     .tab-button:hover {
-        background: #444;
+        background: #A8763E ;
     }
 
     .tab-button.active {
-        background: #0078ff;
+        background: #6F1A07;
     }
 
     /* Tab Content */
