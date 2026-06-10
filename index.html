@@ -1,23 +1,101 @@
-<<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Joseph Parmar
-        </title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="stylesheet.css">
+
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <script src="" async defer></script>
+
+    <!-- Banner -->
+    <div class="banner"></div>
+
+    <!-- Profile -->
+    <div class="profile">
+        <img src="https://media.licdn.com/dms/image/v2/D4D03AQGxeoP_qDhCLA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718231586360?e=1782950400&v=beta&t=KQ9ZwI4UksuMYuLmzQvME3uWdhS1awLVde753UuZyAE" alt="Profile Picture">
+        <h1>Joseph J Parmar</h1>
+        <p>MPhys Physics with Astrophysics student at the University of York</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab(event, 'about')">About</button>
+            <button class="tab-button" onclick="openTab(event, 'contact')">Contact</button>
+            <button class="tab-button" onclick="openTab(event, 'projects')">Projects</button>
+            <button class="tab-button" onclick="openTab(event, 'experience')">Experience</button>
+        </div>
+
+        <div id="about" class="tab-content active">
+            <h2>About Me</h2>
+            <p>
+                Write a short introduction about yourself here.
+                Describe your skills, interests, and career goals.
+            </p>
+        </div>
+
+        <div id="contact" class="tab-content">
+            <h2>Contact Information</h2>
+            <p>Email: hpx503@york.ac.uk</p>
+            <p>LinkedIn: https://www.linkedin.com/in/joseph-parmar-4aa0ba223/</p>
+            <p>GitHub: https://github.com/josephparmar</p>
+        </div>
+
+        <div id="projects" class="tab-content">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <strong>Project One</strong><br>
+                    Short description of the project.
+                </li>
+                <li>
+                    <strong>Project Two</strong><br>
+                    Short description of the project.
+                </li>
+                <li>
+                    <strong>Project Three</strong><br>
+                    Short description of the project.
+                </li>
+            </ul>
+        </div>
+
+        <div id="experience" class="tab-content">
+            <h2>Experience</h2>
+            <ul>
+                <li>
+                    <strong>Job Title</strong> - Company Name<br>
+                    2022 - Present
+                </li>
+                <li>
+                    <strong>Previous Role</strong> - Company Name<br>
+                    2020 - 2022
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+        <script>
+        function openTab(evt, tabName) {
+            const contents = document.querySelectorAll('.tab-content');
+            const buttons = document.querySelectorAll('.tab-button');
+
+            contents.forEach(content => {
+                content.classList.remove('active');
+            });
+
+            buttons.forEach(button => {
+                button.classList.remove('active');
+            });
+
+            document.getElementById(tabName).classList.add('active');
+            evt.currentTarget.classList.add('active');
+        }
+        </script>
+
     </body>
 </html>
